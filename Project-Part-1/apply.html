@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/apply.css">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <div class=""
+    <a href=""> <image src="" alt=""></image></a> 
+    <h1>Job Application Form</h1>
+    <h4>Please make sure that you fill all the * </h4>
+    <form id="survey" method="post" action="">
+    
+        <legend>Name</legend>
+        <p><lable for="Firstname">First name</lable>
+        <input type="text" name="name" id="Firstname" maxlength="20" required="required"/></p>
+        <p><lable for="Lastname">Last name</lable>
+        <input type="text" name="name" id="Lastname" maxlength="20" required="required"/></p>
+    
+    
+        <legend>Birth Date</legend>
+        <p><lable for="Birthdate">Date of birth</lable>
+        <input type="text" name="Birthdate" id="Birthdate" placeholder="dd/mm/yyyy"/></p>
+    
+    <fieldset>
+        <legend>Gender</legend>
+        <p><label for="Male">Male</label>
+        <input type="radio" id="Male" name="male" value="Male" />
+        </p>
+        <p><label for="Female">Female</label>
+        <input type="radio" id="Female" name="female" value="Female" />
+        </p>
+    </fieldset>
+    
+        <legend>Current Address</legend>
+        <p><lable for="Streetaddress">Street address</lable>
+        <input type="text" name="Streetaddress" id="Streetaddress" maxlength="40" required="required"/></p>
+        <p><lable for="Suburb/town">Suburb/ Town</lable>
+        <input type="text" name="Suburb/town" id="Subrub/town" maxlength="40" required="required"/></p>
+        <p><label>State</label>
+            <select name="state" id="state">
+               <option>Seclect your state</option>
+               <option value="Victoria">VIC</option>
+               <option value="NSW">NSW</option>
+               <option value="QLD">QLD</option>
+               <option value="NT">NT</option>
+               <option value="WA">WA</option>
+               <option value="SA">SA</option>
+               <option value="TAS">TAS</option>
+               <option value="ACT">ACT</option>
+           </select>
+           </p>
+        <p><lable for="postcode">Postcode</lable>
+        <input type="number" maxlength="4" placeholder="ex.1234"></p>
+    </fieldset>
+    
+        <legend>Contact Information</legend>
+        <p><lable for="email">Email</lable>
+        <input type="email" name="contactemail" placeholder="name@.gamil.com" required="required"/></p>
+        <p><lable for="phone">Phone Number</lable>
+        <input type="tel" name="phone" placeholder="(##) ####-####" pattern="\(\d{2}) +\d{4}-\d{4}"/></p>
+    </fieldset>
+    
+    <legend>Qualifications/ Certifications</legend>
+    <p><label for="Bachelor's degree in Computer Science">Bachelor's degree in Computer Science</label>
+        <input type="checkbox" id="Bachelor'sdegreeinComputerScience" name="Qualifications/ Certifications" value="Bachelor's degree in ComputerScience" required="required" />
+    </p>
+    <p><label for="Proficiency in Java,C++,Python">Proficiency in Java,C++,Python</label>
+        <input type="checkbox" id="ProficiencyinJava,C++,Python" name="Qualifications/ Certifications" value="Proficiency in Java,C++,Python" required="required"/>
+    </p>
+    <p><label for="Understanding of HTML, CSS and JavaScript">Understanding of HTML, CSS and JavaScript</label>
+        <input type="checkbox" id="UnderstandingofHTML,CSSandJavaScript" name="Qualifications/ Certifications" value="Understanding of HTML, CSS and JavaScript" required="required"/>
+    </p>
+    <p><label for="Basic UX/UI principles">Basic UX/UI principles</label>
+        <input type="checkbox" id="BasicUX/UIprinciples" name="Qualifications/ Certifications" value="Basic UX/UI principles" required="required"/>
+    </p>
+    <p><label for="Mater's degree in Computer Science, Software Engineering">Mater's degree in Computer Science, Software Engineering</label>
+        <input type="checkbox" id="Mater'sdegreeinComputerScience,SoftwareEngineering" name="Qualifications/ Certifications" value="Mater's degree in Computer Science, Software Engineering" />
+    </p>
+    <p><label for="Other">Other </label>
+        <input type="checkbox" id="Other" name="Qualifications/ Certifications" value="Other" />
+    </p>
+   
+        <legend>Other skills</legend>
+        <p><label for="Other skills">Other skills</label></p>
+        <textarea name="Other skills" id="Otherskills">Write description of your skills here...</textarea>
+    </fieldset>
+    </fieldset>
+    <input type="submit" value="Apply" />
+    <input type="reset" value="Reset Form" />
+    </form>
+</body>
+</html>
