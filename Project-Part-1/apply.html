@@ -7,44 +7,40 @@
     <link rel="stylesheet" href="../Project-Part-1/css/section/apply.css">
 </head>
 
-<body class="apply-body-background">
-    <form id="survey" method="post"action="https://mercury.swin.edu.au/it000000/formtest.php">
-    
-    <div id="apply-title">
+<body>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+    <div class="apply-title">
          <h1>Job Application Form</h1>
-         <p>Fields marked with an * ae requited </p>
+         <p>Fields marked with an <span class="required">*</span> ae requited </p>
     </div>
 
-    <div id="Name">
-        <b>Name</b>
-        <p><label for="Firstname">First name *</label>
-        <input type="text" name="name" id="Firstname" maxlength="20" required="required"/></p>
-        <p><lable for="Lastname">Last name</lable>
-        <input type="text" name="name" id="Lastname" maxlength="20" required="required"/></p>
+    <div class="Name">
+        <label for="first-name"> <b>Name</b> <span class="required">*</span></label>
+        <p><input type="text" name="name" id="first-name" placeholder="First Name" maxlength="20" required></p>
+        <p><input type="text" name="name" placeholder="Last Name" maxlength="20" required></p>
     </div>
-    <div id="Brith Date">
-        <b>Birth Date</b>
-        <p class="brith"><lable for="Birthdate">Date of birth</lable>
-        <input type="text" name="Birthdate" id="Birthdate" placeholder="dd/mm/yyyy"/></p>
+    
+    <div class="Brith">
+        <lable for="birth-date"><b>Birth Date</b>   <span class="required">*</span></lable>
+        <p><input type="text" id="birth-date" placeholder="dd/mm/yyyy"/></p>
     </div>
-    <fieldset id="Gender">
-        <legend><b>Gender</b></legend>
+
+    <fieldset class="Gender">
+        <legend> <b>Gender</b>   <span class="required">*</span></legend>
         <p><label for="Male">Male</label>
-        <input type="radio" id="Male" name="male" value="Male"/>
-        </p>
+        <input type="radio" id="Male" name="male" value="Male"/></p>
         <p><label for="Female">Female</label>
-        <input type="radio" id="Female" name="female" value="Female"/>
-        </p>
+        <input type="radio" id="Female" name="female" value="Female"/></p>
     </fieldset>
-    <div id="Address">
-        <b>Current Address</b>
-        <p><lable for="Streetaddress">Street address</lable>
-        <input type="text" name="Streetaddress" id="Streetaddress" maxlength="40" required="required"/></p>
-        <p><lable for="Suburb/town">Suburb/ Town</lable>
-        <input type="text" name="Suburb/town" id="Subrub/town" maxlength="40" required="required"/></p>
+
+    <div class="Address">
+        <lable for="Streetaddress"><b>Current Address</b>   <span class="required">*</span></lable>
+        <p><input type="text" id="Streetaddress" placeholder="Street Address" maxlength="40" required="required"/></p>
+        <p><input type="text" id="Subrub/town" placeholder="Suburb/ Town" maxlength="40" required="required"/></p>
         <p><label>State</label>
             <select name="state" id="state">
-               <option>Seclect your state</option>
+               <option> Seclect your state</option>
                <option value="Victoria">VIC</option>
                <option value="NSW">NSW</option>
                <option value="QLD">QLD</option>
@@ -58,15 +54,15 @@
         <p><lable for="postcode">Postcode</lable>
         <input type="number" maxlength="4" placeholder="ex.1234"></p>
     </div>
-    <div id="Information">
-        <b>Contact Information</b>
-        <p><lable for="email">Email</lable>
-        <input type="email" name="contactemail" placeholder="name@.gamil.com" required="required"/></p>
+    <div class="Information">
+        <b>Contact Information</b>   <span class="required">*</span>
+        <p><lable for="email"></lable>
+        <input type="email" name="contactemail" placeholder="name@.gamil.com" required></p>
         <p><lable for="phone">Phone Number</lable>
         <input type="tel" name="phone" placeholder="(##) ####-####" pattern="\(\d{2}) +\d{4}-\d{4}"/></p>
     </div>
-    <div id="Qualification">
-    <b>Qualifications/ Certifications</b>
+    <div class="Qualification">
+    <b>Qualifications/ Certifications</b>   <span class="required">*</span>
     <p><label for="Bachelor's degree in Computer Science">Bachelor's degree in Computer Science</label>
         <input type="checkbox" id="Bachelor'sdegreeinComputerScience" name="Qualifications/ Certifications" value="Bachelor's degree in ComputerScience" required="required" />
     </p>
@@ -85,15 +81,20 @@
     <p><label for="Other">Other </label>
         <input type="checkbox" id="Other" name="Qualifications/ Certifications" value="Other" />
     </p>
+
+    <label for="position">Position Apply <span class="required">*</span></label>
+    <input type="text" id="position" placeholder="Position Apply" required>
+    
     </div>
     <div id="Other">   
-    <p><label for="Other skills">Other skills</label></p>
+    <p><label for="Other skills"><b>Other skills</b></label></p>
         <textarea name="Other skills" id="Otherskills">Write description of your skills here...</textarea>
     </div>
-    
-    <input type="submit" value="Apply" />
-    <input type="reset" value="Reset Form" />
-    </form>
 
+    <button type="submit" class="submit-button">Apply</button>
+    <button type="reset" class="submit-button">Reset Form</button>
+</div>
+    
+</form>
 </body>
 </html>
