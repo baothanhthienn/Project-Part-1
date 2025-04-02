@@ -4,45 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="../css/section/apply.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Project-Part-1/css/section/apply.css">
 </head>
 
-<section class="apply">
-    <form id="survey" method="post">
 <body class="apply-body-background">
-    <a href="https://mercury.swin.edu.au/it000000/formtest.php"></a>
-    <div class="apply-title">
+    <form id="survey" method="post"action="https://mercury.swin.edu.au/it000000/formtest.php">
+    
+    <div id="apply-title">
          <h1>Job Application Form</h1>
          <p>Fields marked with an * ae requited </p>
     </div>
 
-    <div class="Name">
-        <legend>Name</legend>
-        <div>
-        <p class="Name-firstname"><label for="Firstname">First name *</label>
+    <div id="Name">
+        <b>Name</b>
+        <p><label for="Firstname">First name *</label>
         <input type="text" name="name" id="Firstname" maxlength="20" required="required"/></p>
-        </div>
-        <div>
-        <p class="Name-lastname"><lable for="Lastname">Last name</lable>
+        <p><lable for="Lastname">Last name</lable>
         <input type="text" name="name" id="Lastname" maxlength="20" required="required"/></p>
-        </div>
     </div>
-    <div class="Brith Date">
-        <legend>Birth Date</legend>
+    <div id="Brith Date">
+        <b>Birth Date</b>
         <p class="brith"><lable for="Birthdate">Date of birth</lable>
         <input type="text" name="Birthdate" id="Birthdate" placeholder="dd/mm/yyyy"/></p>
     </div>
-        <legend>Gender</legend>
+    <fieldset id="Gender">
+        <legend><b>Gender</b></legend>
         <p><label for="Male">Male</label>
         <input type="radio" id="Male" name="male" value="Male"/>
         </p>
         <p><label for="Female">Female</label>
         <input type="radio" id="Female" name="female" value="Female"/>
         </p>
-    </div>
-
-        <legend>Current Address</legend>
+    </fieldset>
+    <div id="Address">
+        <b>Current Address</b>
         <p><lable for="Streetaddress">Street address</lable>
         <input type="text" name="Streetaddress" id="Streetaddress" maxlength="40" required="required"/></p>
         <p><lable for="Suburb/town">Suburb/ Town</lable>
@@ -62,16 +57,16 @@
            </p>
         <p><lable for="postcode">Postcode</lable>
         <input type="number" maxlength="4" placeholder="ex.1234"></p>
-    </fieldset>
-    
-        <legend>Contact Information</legend>
+    </div>
+    <div id="Information">
+        <b>Contact Information</b>
         <p><lable for="email">Email</lable>
         <input type="email" name="contactemail" placeholder="name@.gamil.com" required="required"/></p>
         <p><lable for="phone">Phone Number</lable>
         <input type="tel" name="phone" placeholder="(##) ####-####" pattern="\(\d{2}) +\d{4}-\d{4}"/></p>
-    </fieldset>
-    
-    <legend>Qualifications/ Certifications</legend>
+    </div>
+    <div id="Qualification">
+    <b>Qualifications/ Certifications</b>
     <p><label for="Bachelor's degree in Computer Science">Bachelor's degree in Computer Science</label>
         <input type="checkbox" id="Bachelor'sdegreeinComputerScience" name="Qualifications/ Certifications" value="Bachelor's degree in ComputerScience" required="required" />
     </p>
@@ -90,14 +85,15 @@
     <p><label for="Other">Other </label>
         <input type="checkbox" id="Other" name="Qualifications/ Certifications" value="Other" />
     </p>
-   
-        
-        <p><label for="Other skills">Other skills</label></p>
+    </div>
+    <div id="Other">   
+    <p><label for="Other skills">Other skills</label></p>
         <textarea name="Other skills" id="Otherskills">Write description of your skills here...</textarea>
-
+    </div>
+    
     <input type="submit" value="Apply" />
     <input type="reset" value="Reset Form" />
     </form>
-</section> 
+
 </body>
 </html>

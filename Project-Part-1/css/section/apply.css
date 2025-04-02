@@ -6,7 +6,7 @@ form {
     padding: 20px;
     max-width: 600px;
     margin: 20px auto;
-    font-family: "Playfair Display", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .apply-body-background{
@@ -24,23 +24,11 @@ form {
 
 .apply-title p {
     font-size: 20;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .Name{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
-}
-
-.Name-firstname {
-    display: block; 
-  font-size: 14px;
-  font-weight: 500; 
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.Name-lastname {
-     border: 1px;
 }
