@@ -1,0 +1,46 @@
+form {
+    background: white;
+    background-attachment: fixed;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.apply-body-background{
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply-title{
+    font-size: 24px; 
+  font-weight: 700; 
+  margin-bottom: 16px; 
+  text-align: center;
+}
+
+.apply-title p {
+    font-size: 20;
+    text-align: center;
+    
+}
+
+.Name{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+
+.Name-firstname {
+    display: block; 
+  font-size: 14px;
+  font-weight: 500; 
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Name-lastname {
+     border: 1px;
+}
