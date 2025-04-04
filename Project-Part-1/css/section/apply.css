@@ -72,14 +72,14 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
+#Other textarea{
+ font-family: Arial, sans-serif;
+}
 
-.submit-button {
+.submit-button:hover {
     background-color: #0056b3;
-    color: white;
 }
 
 .required {
     color: red;
 }
-
-
