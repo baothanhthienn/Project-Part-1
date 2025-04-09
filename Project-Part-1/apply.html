@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information about the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
+    <!-- Link to the CSS in oder to apply CSS style -->
     <link rel="stylesheet" href="../Project-Part-1/css/section/apply.css">
 </head>
 
 <body>
+    <!-- Start the form -->
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-
+    <!-- Title of the form -->
     <div class="apply-title">
          <h1>Job Application Form</h1>
          <p>Fields marked with an <span class="required">*</span> ae requited </p>
     </div>
 
+    <!-- Section for Name input -->
     <div class="Name">
-        <label for="first-name"> <b>Name</b> <span class="required">*</span></label>
+        <!-- Lable for Name -->
+        <label for="first-name"> Name <span class="required">*</span></label>
         <p><input type="text" name="name" id="first-name" placeholder="First Name" maxlength="20" required></p>
+         <!-- Input for first name -->
         <p><input type="text" name="name" placeholder="Last Name" maxlength="20" required></p>
+        <!-- Input for last name -->
     </div>
-    
+
+    <!-- Section for Date of Birth -->
     <div class="Brith">
-        <lable for="birth-date"><b>Birth Date</b>   <span class="required">*</span></lable>
+         <!-- Lable for birth date -->
+        <lable for="birth-date"> Birth Date  <span class="required">*</span></lable>
+         <!-- input for date of birth -->
         <p><input type="text" id="birth-date" placeholder="dd/mm/yyyy"/></p>
     </div>
 
+    <!-- Section for Gender selection -->
     <fieldset class="Gender">
-        <legend> <b>Gender</b>   <span class="required">*</span></legend>
+        <legend> Gender   <span class="required">*</span></legend>
+        <!-- Radio button for male-->
         <p><label for="Male">Male</label>
         <input type="radio" id="Male" name="male" value="Male"/></p>
+         <!-- Radio button for female-->
         <p><label for="Female">Female</label>
         <input type="radio" id="Female" name="female" value="Female"/></p>
     </fieldset>
 
+    <!-- Section for address-->
     <div class="Address">
+        <!-- Lable and input for street address -->
         <lable for="Streetaddress"><b>Current Address</b>   <span class="required">*</span></lable>
         <p><input type="text" id="Streetaddress" placeholder="Street Address" maxlength="40" required="required"/></p>
         <p><input type="text" id="Subrub/town" placeholder="Suburb/ Town" maxlength="40" required="required"/></p>
+        <!-- Dropdown list -->
         <p><label>State</label>
             <select name="state" id="state">
                <option> Seclect your state</option>
@@ -51,18 +67,26 @@
                <option value="ACT">ACT</option>
            </select>
            </p>
+         <!-- lable and input for postcode -->
         <p><lable for="postcode">Postcode</lable>
         <input type="number" maxlength="4" placeholder="ex.1234"></p>
     </div>
+
+     <!-- section for contact information -->
     <div class="Information">
-        <b>Contact Information</b>   <span class="required">*</span>
+        Contact Information   <span class="required">*</span>
+        <!-- input email -->
         <p><lable for="email"></lable>
         <input type="email" name="contactemail" placeholder="name@.gamil.com" required></p>
+        <!-- input phone number -->
         <p><lable for="phone">Phone Number</lable>
         <input type="tel" name="phone" placeholder="(##) ####-####" pattern="\(\d{2}) +\d{4}-\d{4}"/></p>
     </div>
+
+    <!-- section for qualitification -->
     <div class="Qualification">
-    <b>Qualifications/ Certifications</b>   <span class="required">*</span>
+    Qualifications/ Certifications  <span class="required">*</span>
+    <!-- ckeck box required -->
     <p><label for="Bachelor's degree in Computer Science">Bachelor's degree in Computer Science</label>
         <input type="checkbox" id="Bachelor'sdegreeinComputerScience" name="Qualifications/ Certifications" value="Bachelor's degree in ComputerScience" required="required" />
     </p>
@@ -86,11 +110,13 @@
     <input type="text" id="position" placeholder="Position Apply" required>
 
 </div>
+    <!-- section for other skills -->
     <div id="Other">   
     <p><label for="Other skills"><b>Other skills</b></label></p>
         <textarea name="Other skills" id="Otherskills">Write description of your skills here...</textarea>
     </div>
 
+    <!-- Submit and reset button -->
     <button type="submit" class="submit-button">Submit</button>
     <button type="reset" class="rest-button">Reset Form</button>
 </div>
