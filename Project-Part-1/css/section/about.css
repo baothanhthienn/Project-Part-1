@@ -125,8 +125,8 @@ dd {
 /* Styling for the "seng" header section */
 .seng {
     background-image: url('cat.jpeg'); /* Sets the background image */
-    background-size: cover; /* Makes sure the image covers the entire area */
-    background-position:contain; /* Centers the background image */
+    background-size:contain; /* Makes sure the image covers the entire area */
+    background-position:cover; /* Centers the background image */
     color:#070000c1; /* Makes the text white to stand out against the image */
     padding: 250px 0; /* Adds padding to create space around the text */
     text-align: center; /* Centers the text */
