@@ -1,4 +1,5 @@
-body {
+/* Styling for index.html*/
+body.index {
     background: #fff;
     color: #666;
     font: 15px/1.5 "Helvetica Neue", Arial, sans-serif;
@@ -242,7 +243,7 @@ footer {
 }
 
 
-/* Style the apply.html */
+/* Styling the apply.html */
 /* Applies the styling for <body> */ 
 body.apply {
     font-family: Arial, sans-serif; 
@@ -339,3 +340,135 @@ input[type="radio"] {
 .required {
     color: red;
 }
+
+
+/* Styling the jobs.html */ 
+
+body.jobs {
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header.jobs-header { 
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0,2);
+    height: 120px;
+}
+
+header.jobs-header h1 {
+    float: left;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 55px;
+    margin-top: 32px;
+}
+
+header.jobs-header nav {
+    float: right;
+}
+
+.h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    box-sizing: none border-box;
+}
+
+nav.jobs-nav ul {
+    list-style: none;
+    text-align: left;
+    padding: 50px; 
+}
+nav.jobs-nav ul li {
+    display: inline;
+    margin: 0 10px;
+    float: right;
+}
+
+nav.jobs-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav.jobs-nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Styling the main content */
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.jobs-h2 {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* Styling the job description parts */
+div.div-main {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+div.div-main h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+div.div-main p { 
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+div.div-main h4 { 
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+div.div-main ul {
+    list-style: none;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+div.div-main ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+div.div-main ul li:before {
+    color: #007bff;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Footer styling */ 
+footer.jobs-footer p {
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-size: 14px; 
+}
+
+/* Styling the about.html */ 
+
