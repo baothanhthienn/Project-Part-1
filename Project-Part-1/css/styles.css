@@ -240,4 +240,102 @@ footer {
 #footer-links a:hover {
     color: #000;
 }
-/**/
+
+
+/* Style the apply.html */
+/* Applies the styling for <body> */ 
+body.apply {
+    font-family: Arial, sans-serif; 
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Style the form */
+form.form {
+    background: white;
+    background-attachment: fixed;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    max-width: 100%;
+    margin-left: 10px auto;
+    margin-right: 10px;
+}
+
+/* Style the title of the form */
+.apply-title{
+  font-weight: 500; 
+  margin-bottom: 24px; 
+  text-align: center;
+}
+
+/* The heading inside the title */ 
+.apply-title h1 {
+    font-size: 34px; /* the font size */
+}
+
+/* Apply the style for the paragraph of the title */
+.apply-title p {
+    font-size: 14px;
+    text-align: center;  
+}
+
+/* No border for Gender */ 
+.Gender {
+    border: none;
+}
+
+/* General label styling for form fields */ 
+label {
+    display: block; /* puts the label in their own line */ 
+    margin-bottom: 5px;  /* spacing below the text */ 
+    font-weight: bold; /* bold text */ 
+}
+
+/* Input fields and select dropdown styling */ 
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%; /* full width */
+    padding: 10px; /* inner spacing */ 
+    margin-bottom: 15px; /* space below each field */
+    border: 1px solid #ced4da;  /* light gray border */ 
+    border-radius: 5px; /* rounded corners */
+    font-size: 14px;
+}
+
+/* Radio button styling */ 
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Group container for checkboxes */ 
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+/* Labels inside checkbox group displayed inline */ 
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+/* Styling the text area inside a section with ID "Other" */
+#Other textarea{
+ font-family: Arial, sans-serif;
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adds red color to elements with class "required" (usually asterisks) */
+.required {
+    color: red;
+}

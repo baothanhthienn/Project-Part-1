@@ -1,5 +1,5 @@
 /* Basic styling for the body */
-body {
+body.about {
     font-family: Arial, sans-serif; /* Sets the font family */
     line-height: 1.6; /* Makes the text more readable with spaced lines */
     margin: 0; /* Removes the default margin around the page */
