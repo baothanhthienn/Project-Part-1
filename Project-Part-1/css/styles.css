@@ -329,18 +329,34 @@ input[type="radio"] {
 /* Styling the text area inside a section with ID "Other" */
 #Other textarea{
  font-family: Arial, sans-serif;
+ display: block;
 }
 
-/* Hover effect for submit button */
-.submit-button:hover {
-    background-color: #0056b3;
-}
 
 /* Adds red color to elements with class "required" (usually asterisks) */
 .required {
     color: red;
 }
 
+.form-footer input[type="submit"],
+.form-footer input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.form-footer input[type="submit"]:hover,
+.form-footer input[type="reset"]:hover {
+    background-color: #0056b3;
+}
 
 /* Styling the jobs.html */ 
 
