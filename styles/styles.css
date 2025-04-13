@@ -109,7 +109,7 @@ nav ul li a {
 /* Hero */
 #biggest-image {
     height: 500px;
-    background: #e0e0e0 url('../images/minimal-city.jpg') no-repeat center;
+    background: #e0e0e0 url('images/minimal-city.jpg') no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -170,15 +170,15 @@ nav ul li a {
 }
 
 .innovative-tech {
-    background-image: url('../images/features-icon-1.png');
+    background-image: url('images/features-icon-1.png');
 }
 
 .global-reach {
-    background-image: url('../images/features-icon-2.png');
+    background-image: url('images/features-icon-2.png');
 }
 
 .flexibility {
-    background-image: url('../images/features-icon-3.png');
+    background-image: url('images/features-icon-3.png');
 }
 
 /* Main Content */
