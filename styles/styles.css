@@ -109,7 +109,7 @@ nav ul li a {
 /* Hero */
 #biggest-image {
     height: 500px;
-    background: #e0e0e0 url('https://baothanhthienn.github.io/Project-Part-1/images/minimal-city.jpg') no-repeat center;
+    background: #e0e0e0 url('images/minimal-city.jpg') no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
