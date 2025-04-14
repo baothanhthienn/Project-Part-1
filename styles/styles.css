@@ -636,6 +636,11 @@ table td {
     /* Centers the content inside the cells */
 }
 
+/* Hover effect for table headers and cells */
+table th:hover, table td:hover {
+    background-color: #cce0ff; /* Changes the background color on hover */
+}
+
 
 /* Styling for the list of student IDs */
 ul.student-ids {
