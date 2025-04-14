@@ -638,7 +638,7 @@ table td {
 
 /* Hover effect for table headers and cells */
 table th:hover, table td:hover {
-    background-color: #cce0ff; /* Changes the background color on hover */
+    background-color: #cce0ff; 
 }
 
 
